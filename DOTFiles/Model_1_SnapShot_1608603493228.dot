@@ -1,0 +1,187 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+6798208728600954568 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"START\", \"START\", \"START\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = {}",style = filled]
+6798208728600954568 -> 4954475746088640562 [label="",color="2",fontcolor="2"];
+4954475746088640562 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"START\", \"START\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = {[round |-> 1, value |-> 1, nodeid |-> 1]}"];
+6798208728600954568 -> 8768434477171639267 [label="",color="2",fontcolor="2"];
+8768434477171639267 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"START\", \"PHASE1\", \"START\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = {[round |-> 1, value |-> 0, nodeid |-> 2]}"];
+4954475746088640562 -> 3474325031604058656 [label="",color="2",fontcolor="2"];
+3474325031604058656 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"PHASE1\", \"START\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+6798208728600954568 -> 3740045055824658873 [label="",color="2",fontcolor="2"];
+3740045055824658873 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"START\", \"START\", \"PHASE1\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = {[round |-> 1, value |-> 0, nodeid |-> 3]}"];
+8768434477171639267 -> 3474325031604058656 [label="",color="2",fontcolor="2"];
+3474325031604058656 -> 3886482175309995506 [label="",color="2",fontcolor="2"];
+3886482175309995506 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"PHASE1\", \"PHASE1\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+6798208728600954568 -> 6798208728600954568 [style="dashed"];
+8768434477171639267 -> 7238855324121511843 [label="",color="2",fontcolor="2"];
+7238855324121511843 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"START\", \"PHASE1\", \"PHASE1\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }"];
+4954475746088640562 -> -8040054917800591706 [label="",color="2",fontcolor="2"];
+-8040054917800591706 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"START\", \"PHASE1\">>\n/\\ p2v = <<-1, -1, -1>>\n/\\ p2Msg = {}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+3740045055824658873 -> -8040054917800591706 [label="",color="2",fontcolor="2"];
+7238855324121511843 -> 3886482175309995506 [label="",color="2",fontcolor="2"];
+8768434477171639267 -> 8768434477171639267 [style="dashed"];
+4954475746088640562 -> 4954475746088640562 [style="dashed"];
+3474325031604058656 -> 3474325031604058656 [style="dashed"];
+3740045055824658873 -> 7238855324121511843 [label="",color="2",fontcolor="2"];
+7238855324121511843 -> 7238855324121511843 [style="dashed"];
+3740045055824658873 -> 3740045055824658873 [style="dashed"];
+-8040054917800591706 -> 3886482175309995506 [label="",color="2",fontcolor="2"];
+3886482175309995506 -> -8445000822821457094 [label="",color="3",fontcolor="3"];
+-8445000822821457094 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE1\", \"PHASE1\">>\n/\\ p2v = <<0, -1, -1>>\n/\\ p2Msg = {[round |-> 1, value |-> 0, nodeid |-> 1]}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8040054917800591706 -> -8040054917800591706 [style="dashed"];
+3886482175309995506 -> -6228772409857452014 [label="",color="3",fontcolor="3"];
+-6228772409857452014 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"PHASE2\", \"PHASE1\">>\n/\\ p2v = <<-1, 0, -1>>\n/\\ p2Msg = {[round |-> 1, value |-> 0, nodeid |-> 2]}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8445000822821457094 -> -8747375401629547905 [label="",color="3",fontcolor="3"];
+-8747375401629547905 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE2\", \"PHASE1\">>\n/\\ p2v = <<0, 0, -1>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2] }\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+3886482175309995506 -> 6060620671476156830 [label="",color="3",fontcolor="3"];
+6060620671476156830 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"PHASE1\", \"PHASE2\">>\n/\\ p2v = <<-1, -1, 0>>\n/\\ p2Msg = {[round |-> 1, value |-> 0, nodeid |-> 3]}\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8445000822821457094 -> 7604120489857779962 [label="",color="3",fontcolor="3"];
+7604120489857779962 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE1\", \"PHASE2\">>\n/\\ p2v = <<0, -1, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+3886482175309995506 -> 3886482175309995506 [style="dashed"];
+-8747375401629547905 -> -4464255128586648376 [label="",color="3",fontcolor="3"];
+-4464255128586648376 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE2\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-6228772409857452014 -> -8747375401629547905 [label="",color="3",fontcolor="3"];
+-8445000822821457094 -> -8445000822821457094 [style="dashed"];
+-6228772409857452014 -> -5540998514507897727 [label="",color="3",fontcolor="3"];
+-5540998514507897727 [label="/\\ decision = <<FALSE, FALSE, FALSE>>\n/\\ k = <<1, 1, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE1\", \"PHASE2\", \"PHASE2\">>\n/\\ p2v = <<-1, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8747375401629547905 -> -8747375401629547905 [style="dashed"];
+-6228772409857452014 -> -6228772409857452014 [style="dashed"];
+6060620671476156830 -> 7604120489857779962 [label="",color="3",fontcolor="3"];
+6060620671476156830 -> -5540998514507897727 [label="",color="3",fontcolor="3"];
+6060620671476156830 -> 6060620671476156830 [style="dashed"];
+7604120489857779962 -> -4464255128586648376 [label="",color="3",fontcolor="3"];
+7604120489857779962 -> 7604120489857779962 [style="dashed"];
+-5540998514507897727 -> -4464255128586648376 [label="",color="3",fontcolor="3"];
+-4464255128586648376 -> 8848993074823354808 [label="",color="4",fontcolor="4"];
+8848993074823354808 [label="/\\ decision = <<TRUE, FALSE, FALSE>>\n/\\ k = <<2, 1, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"PHASE2\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-5540998514507897727 -> -5540998514507897727 [style="dashed"];
+8848993074823354808 -> -4550173543502904694 [label="",color="2",fontcolor="2"];
+-4550173543502904694 [label="/\\ decision = <<TRUE, FALSE, FALSE>>\n/\\ k = <<2, 1, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"PHASE2\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4464255128586648376 -> 4166929941623967046 [label="",color="4",fontcolor="4"];
+4166929941623967046 [label="/\\ decision = <<FALSE, TRUE, FALSE>>\n/\\ k = <<1, 2, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"START\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4550173543502904694 -> 5893163979252846907 [label="",color="4",fontcolor="4"];
+5893163979252846907 [label="/\\ decision = <<TRUE, TRUE, FALSE>>\n/\\ k = <<2, 2, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"START\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4464255128586648376 -> -4903840994029168157 [label="",color="4",fontcolor="4"];
+-4903840994029168157 [label="/\\ decision = <<FALSE, FALSE, TRUE>>\n/\\ k = <<1, 1, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE2\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+8848993074823354808 -> -6893943258981098731 [label="",color="4",fontcolor="4"];
+-6893943258981098731 [label="/\\ decision = <<TRUE, TRUE, FALSE>>\n/\\ k = <<2, 2, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"START\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4464255128586648376 -> -4464255128586648376 [style="dashed"];
+-4550173543502904694 -> -5303580600861847877 [label="",color="4",fontcolor="4"];
+-5303580600861847877 [label="/\\ decision = <<TRUE, FALSE, TRUE>>\n/\\ k = <<2, 1, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"PHASE2\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+4166929941623967046 -> -6893943258981098731 [label="",color="4",fontcolor="4"];
+5893163979252846907 -> -8448305529347869636 [label="",color="2",fontcolor="2"];
+-8448305529347869636 [label="/\\ decision = <<TRUE, TRUE, FALSE>>\n/\\ k = <<2, 2, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"Done\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4903840994029168157 -> 6082835368132645816 [label="",color="4",fontcolor="4"];
+6082835368132645816 [label="/\\ decision = <<TRUE, FALSE, TRUE>>\n/\\ k = <<2, 1, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"PHASE2\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+4166929941623967046 -> -1392973596659001882 [label="",color="2",fontcolor="2"];
+-1392973596659001882 [label="/\\ decision = <<FALSE, TRUE, FALSE>>\n/\\ k = <<1, 2, 1>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"Done\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-4550173543502904694 -> -4550173543502904694 [style="dashed"];
+8848993074823354808 -> 6082835368132645816 [label="",color="4",fontcolor="4"];
+5893163979252846907 -> 4943076194388326083 [label="",color="4",fontcolor="4"];
+4943076194388326083 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"START\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+8848993074823354808 -> 8848993074823354808 [style="dashed"];
+4166929941623967046 -> 3036733289869997351 [label="",color="4",fontcolor="4"];
+3036733289869997351 [label="/\\ decision = <<FALSE, TRUE, TRUE>>\n/\\ k = <<1, 2, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"START\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+5893163979252846907 -> 5893163979252846907 [style="dashed"];
+-4903840994029168157 -> 3036733289869997351 [label="",color="4",fontcolor="4"];
+-4903840994029168157 -> -9083131761229354516 [label="",color="2",fontcolor="2"];
+-9083131761229354516 [label="/\\ decision = <<FALSE, FALSE, TRUE>>\n/\\ k = <<1, 1, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"PHASE2\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+4166929941623967046 -> 4166929941623967046 [style="dashed"];
+-4903840994029168157 -> -4903840994029168157 [style="dashed"];
+-5303580600861847877 -> 4943076194388326083 [label="",color="4",fontcolor="4"];
+-5303580600861847877 -> -8464265119647930230 [label="",color="2",fontcolor="2"];
+-8464265119647930230 [label="/\\ decision = <<TRUE, FALSE, TRUE>>\n/\\ k = <<2, 1, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"PHASE2\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-6893943258981098731 -> 5893163979252846907 [label="",color="2",fontcolor="2"];
+-6893943258981098731 -> -726692923636736833 [label="",color="2",fontcolor="2"];
+-726692923636736833 [label="/\\ decision = <<TRUE, TRUE, FALSE>>\n/\\ k = <<2, 2, 1>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"Done\", \"PHASE2\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, -1>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-5303580600861847877 -> -5303580600861847877 [style="dashed"];
+-6893943258981098731 -> 156120792886261260 [label="",color="4",fontcolor="4"];
+156120792886261260 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"START\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-6893943258981098731 -> -6893943258981098731 [style="dashed"];
+-8448305529347869636 -> -2643965923040517679 [label="",color="4",fontcolor="4"];
+-2643965923040517679 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"Done\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8448305529347869636 -> -8448305529347869636 [style="dashed"];
+6082835368132645816 -> -5303580600861847877 [label="",color="2",fontcolor="2"];
+6082835368132645816 -> 156120792886261260 [label="",color="4",fontcolor="4"];
+6082835368132645816 -> -8419668871292799080 [label="",color="2",fontcolor="2"];
+-8419668871292799080 [label="/\\ decision = <<TRUE, FALSE, TRUE>>\n/\\ k = <<2, 1, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"PHASE2\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, -1, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-1392973596659001882 -> -726692923636736833 [label="",color="4",fontcolor="4"];
+6082835368132645816 -> 6082835368132645816 [style="dashed"];
+-1392973596659001882 -> -3111213332260760474 [label="",color="4",fontcolor="4"];
+-3111213332260760474 [label="/\\ decision = <<FALSE, TRUE, TRUE>>\n/\\ k = <<1, 2, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"Done\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+4943076194388326083 -> -2643965923040517679 [label="",color="2",fontcolor="2"];
+-1392973596659001882 -> -1392973596659001882 [style="dashed"];
+4943076194388326083 -> -9110559768991368849 [label="",color="2",fontcolor="2"];
+-9110559768991368849 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"START\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+4943076194388326083 -> 4943076194388326083 [style="dashed"];
+3036733289869997351 -> 156120792886261260 [label="",color="4",fontcolor="4"];
+3036733289869997351 -> -3111213332260760474 [label="",color="2",fontcolor="2"];
+3036733289869997351 -> -8210964966165967656 [label="",color="2",fontcolor="2"];
+-8210964966165967656 [label="/\\ decision = <<FALSE, TRUE, TRUE>>\n/\\ k = <<1, 2, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"START\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+3036733289869997351 -> 3036733289869997351 [style="dashed"];
+-9083131761229354516 -> -8419668871292799080 [label="",color="4",fontcolor="4"];
+-8464265119647930230 -> -9110559768991368849 [label="",color="4",fontcolor="4"];
+-726692923636736833 -> -8448305529347869636 [label="",color="2",fontcolor="2"];
+-8464265119647930230 -> -8464265119647930230 [style="dashed"];
+-9083131761229354516 -> -8210964966165967656 [label="",color="4",fontcolor="4"];
+156120792886261260 -> 4943076194388326083 [label="",color="2",fontcolor="2"];
+-9083131761229354516 -> -9083131761229354516 [style="dashed"];
+-726692923636736833 -> -2994646854807644167 [label="",color="4",fontcolor="4"];
+156120792886261260 -> -2994646854807644167 [label="",color="2",fontcolor="2"];
+-2994646854807644167 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"Done\", \"START\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-726692923636736833 -> -726692923636736833 [style="dashed"];
+-2643965923040517679 -> 176509315602857959 [label="",color="2",fontcolor="2"];
+176509315602857959 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"Done\", \"Done\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+156120792886261260 -> -8309539722761318585 [label="",color="2",fontcolor="2"];
+-8309539722761318585 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"START\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-2643965923040517679 -> -2643965923040517679 [style="dashed"];
+-8419668871292799080 -> -8464265119647930230 [label="",color="2",fontcolor="2"];
+156120792886261260 -> 156120792886261260 [style="dashed"];
+-8419668871292799080 -> -8309539722761318585 [label="",color="4",fontcolor="4"];
+-8419668871292799080 -> -8419668871292799080 [style="dashed"];
+-3111213332260760474 -> -2994646854807644167 [label="",color="4",fontcolor="4"];
+-3111213332260760474 -> 5174692137110721882 [label="",color="2",fontcolor="2"];
+5174692137110721882 [label="/\\ decision = <<FALSE, TRUE, TRUE>>\n/\\ k = <<1, 2, 2>>\n/\\ p1v = <<1, 0, 0>>\n/\\ pc = <<\"PHASE2\", \"Done\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<-1, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-3111213332260760474 -> -3111213332260760474 [style="dashed"];
+-9110559768991368849 -> 176509315602857959 [label="",color="2",fontcolor="2"];
+-9110559768991368849 -> -9110559768991368849 [style="dashed"];
+-8210964966165967656 -> -8309539722761318585 [label="",color="4",fontcolor="4"];
+-8210964966165967656 -> 5174692137110721882 [label="",color="2",fontcolor="2"];
+-8210964966165967656 -> -8210964966165967656 [style="dashed"];
+-2994646854807644167 -> -2643965923040517679 [label="",color="2",fontcolor="2"];
+176509315602857959 -> 176509315602857959 [label="",color="5",fontcolor="5"];
+176509315602857959 -> 176509315602857959 [style="dashed"];
+-2994646854807644167 -> -6737169639117910723 [label="",color="2",fontcolor="2"];
+-6737169639117910723 [label="/\\ decision = <<TRUE, TRUE, TRUE>>\n/\\ k = <<2, 2, 2>>\n/\\ p1v = <<0, 0, 0>>\n/\\ pc = <<\"START\", \"Done\", \"Done\">>\n/\\ p2v = <<0, 0, 0>>\n/\\ p2Msg = { [round |-> 1, value |-> 0, nodeid |-> 1],\n  [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3] }\n/\\ decided = <<0, 0, 0>>\n/\\ p1Msg = { [round |-> 1, value |-> 0, nodeid |-> 2],\n  [round |-> 1, value |-> 0, nodeid |-> 3],\n  [round |-> 1, value |-> 1, nodeid |-> 1] }"];
+-8309539722761318585 -> -9110559768991368849 [label="",color="2",fontcolor="2"];
+-8309539722761318585 -> -6737169639117910723 [label="",color="2",fontcolor="2"];
+-2994646854807644167 -> -2994646854807644167 [style="dashed"];
+-8309539722761318585 -> -8309539722761318585 [style="dashed"];
+5174692137110721882 -> -6737169639117910723 [label="",color="4",fontcolor="4"];
+5174692137110721882 -> 5174692137110721882 [style="dashed"];
+-6737169639117910723 -> 176509315602857959 [label="",color="2",fontcolor="2"];
+-6737169639117910723 -> -6737169639117910723 [style="dashed"];
+{rank = same; 6798208728600954568;}
+{rank = same; 4954475746088640562;8768434477171639267;3740045055824658873;}
+{rank = same; 3474325031604058656;7238855324121511843;-8040054917800591706;}
+{rank = same; 3886482175309995506;}
+{rank = same; -8445000822821457094;-6228772409857452014;6060620671476156830;}
+{rank = same; -5540998514507897727;-8747375401629547905;7604120489857779962;}
+{rank = same; -4464255128586648376;}
+{rank = same; 8848993074823354808;-4903840994029168157;4166929941623967046;}
+{rank = same; 6082835368132645816;-4550173543502904694;3036733289869997351;-6893943258981098731;-9083131761229354516;-1392973596659001882;}
+{rank = same; -726692923636736833;-3111213332260760474;5893163979252846907;156120792886261260;-8419668871292799080;-8210964966165967656;-5303580600861847877;}
+{rank = same; 5174692137110721882;4943076194388326083;-2994646854807644167;-8448305529347869636;-8309539722761318585;-8464265119647930230;}
+{rank = same; -2643965923040517679;-6737169639117910723;-9110559768991368849;}
+{rank = same; 176509315602857959;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=5]
+START [label="START",fillcolor=2]
+PHASE2 [label="PHASE2",fillcolor=4]
+PHASE1 [label="PHASE1",fillcolor=3]
+}}

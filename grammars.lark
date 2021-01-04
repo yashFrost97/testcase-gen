@@ -1,0 +1,14 @@
+state: ("/\\" variable)*
+variable: CNAME "=" value
+value: map | sequence | word
+map: "[" [key_value ("," key_value)*] "]"
+key_value: word "|->" value
+seq_left: "<<" | "{"
+seq_right: ">>" | "}"
+sequence: seq_left value? ("," value)* seq_right
+word: /("?)*-?\w+("?)*/ | NUMBER
+
+%import common.CNAME
+%import common.NUMBER
+%import common.WS
+%ignore WS
