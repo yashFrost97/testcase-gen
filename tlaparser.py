@@ -1,14 +1,14 @@
 from lark import Lark, tree
-from typing import Tuple
+from typing import Tuple, List
 
 class SystemState:
 	""" Class for system variables, as seen in TLA+.
 	 """
-	p1val: Tuple[int]
-	p2val: Tuple[int]
-	round: Tuple[int]
-	decided: Tuple[int]
-	decision: Tuple[bool]
+	p1val: List[int]
+	p2val: List[int]
+	round: List[int]
+	decided: List[int]
+	decision: List[bool]
 
 	def __init__(self, round, p1val, p2val, decided, decision):
 		self.round = round
@@ -17,6 +17,19 @@ class SystemState:
 		self.decided = decided
 		self.decision = decision
 
+	def __repr__(self):
+		s = f'round:{self.round}, p1val:{self.p1val}, p2val:{self.p2val}, decided:{self.decided}, decision:{self.decision}'
+		return s
+
+
+	def __str__(self):
+		s = f'round:{self.round}, p1val:{self.p1val}, p2val:{self.p2val}, decided:{self.decided}, decision:{self.decision}'
+		return s
+
+""""
+	Use paxos_grammars.lark for parsing paxos tla dot dump.
+	grammars.lark was for benor. 
+"""
 with open("grammars.lark", "r") as grammar_file:
 	lark_parser = Lark(grammar_file, start="state",propagate_positions=True)
 
@@ -40,7 +53,7 @@ def parse_round(stuff):
 	rnd.append(int(stuff.children[0].children[1].children[0].children[0]))
 	rnd.append(int(stuff.children[0].children[2].children[0].children[0]))
 	rnd.append(int(stuff.children[0].children[3].children[0].children[0]))
-	return tuple(rnd)
+	return list(rnd)
 
 
 def parse_p1(stuff):
@@ -49,7 +62,7 @@ def parse_p1(stuff):
 	p1v.append(int(stuff.children[0].children[1].children[0].children[0]))
 	p1v.append(int(stuff.children[0].children[2].children[0].children[0]))
 	p1v.append(int(stuff.children[0].children[3].children[0].children[0]))
-	return tuple(p1v)
+	return list(p1v)
 
 
 def parse_p2(stuff):
@@ -57,7 +70,7 @@ def parse_p2(stuff):
 	p2v.append(int(stuff.children[0].children[1].children[0].children[0]))
 	p2v.append(int(stuff.children[0].children[2].children[0].children[0]))
 	p2v.append(int(stuff.children[0].children[3].children[0].children[0]))
-	return tuple(p2v)
+	return list(p2v)
 
 
 def parse_decided(stuff):
@@ -65,7 +78,7 @@ def parse_decided(stuff):
 	decided.append(int(stuff.children[0].children[1].children[0].children[0]))
 	decided.append(int(stuff.children[0].children[2].children[0].children[0]))
 	decided.append(int(stuff.children[0].children[3].children[0].children[0]))
-	return tuple(decided)
+	return list(decided)
 
 
 def parse_decision(stuff):
@@ -74,7 +87,7 @@ def parse_decision(stuff):
 	deci.append(additional_processing(stuff.children[0].children[1].children[0].children[0].value))
 	deci.append(additional_processing(stuff.children[0].children[2].children[0].children[0].value))
 	deci.append(additional_processing(stuff.children[0].children[3].children[0].children[0].value))
-	return tuple(deci)
+	return list(deci)
 
 
 def additional_processing(temp):
